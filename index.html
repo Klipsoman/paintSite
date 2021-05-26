@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <header id="header">
+
+            <h1>Онлайн рисовалка</h1>
+
+            <div class="palite">
+                <div class="palite-color black current-point" data-color='black'></div>
+                <div class="palite-color white" data-color='white'></div>
+                <div class="palite-color red" data-color='rgb(199, 65, 65)'></div>
+                <div class="palite-color blue" data-color='rgb(37, 75, 199)'></div>
+                <div class="palite-color yellow" data-color='rgb(240, 240, 62)'></div>
+                <div class="palite-color green" data-color='rgb(62, 240, 92)'></div>
+                <div class="palite-color violet" data-color='rgb(144, 88, 248)'></div>
+                <div class="palite-color orange" data-color='rgb(224, 115, 42)'></div>
+                <div class="palite-color cyan" data-color='rgb(41, 212, 212)'></div>
+            </div>
+
+            <div class="line-width">
+                <div class="line-width-elem" data-line-width="5">
+                    <div class="px5"></div>
+                </div>
+                <div class="line-width-elem" data-line-width="10">
+                    <div class="px10"></div>
+                </div>
+                <div class="line-width-elem" data-line-width="15">
+                    <div class="px15"></div>
+                </div>
+                <div class="line-width-elem current-point" data-line-width="20">
+                    <div class="px20"></div>
+                </div>
+                <div class="line-width-elem" data-line-width="30">
+                    <div class="px30"></div>
+                </div>
+            </div>
+
+            <div class="buttons-block">
+                <button id="clear-btn" class="buttons-block_button">Очистить</button>
+                <button id="play-btn" class="buttons-block_button">Воспроизвести</button>             
+                <button id="save-img-btn" class="buttons-block_button">Сохранить изображение</button>               
+            </div>
+        </header>
+        <div class="canvas-wrapper">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="whats-going">
+            <span></span>
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
